@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(201, 199, 197);
+}
 h1{
     text-align: center;
 }
@@ -16,7 +19,6 @@ li{
     justify-content: center;
     align-items: center;
     /* gap: 30px; */
-    background-color: rgb(201, 199, 197);
 }
 .meal{
     display: flex;
@@ -47,4 +49,10 @@ button{
     background-color: rgb(209, 41, 41);
     color: antiquewhite;
     font-weight: 500px;
+}
+@media screen and (min-width: 760px) {
+    .meal-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
