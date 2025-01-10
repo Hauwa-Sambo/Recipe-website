@@ -12,4 +12,7 @@
                     <li class="ingredient"></li>
                 </ul>
                 <button>Watch Video</button>
-            </div> */
+            </div> 
+            <a href="https://www.youtube.com/watch?v=IO0issT0Rmc">
+                    <button>Watch Video</button>
+                </a>*/
