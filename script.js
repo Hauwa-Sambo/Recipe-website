@@ -1,26 +1,3 @@
-const renderMealList = mealListContainer =>{
-    const Container = document.querySelector('.meal-list');
-        mealListContainer.forEach(mealListContainer => {
-            Container.innerHTML += `
-                        <img src="${mealListContainer.image}" alt="" class="meal-image">
-                        <h2 class="meal-title">${mealListContainer.mealTitle}</h2>
-                        <p class="instruction">${mealListContainer.instruction}</p>
-                        <ul class="ingredients">
-                            <li class="ingredient">${mealListContainer.ingredient1}</li>
-                            <li class="ingredient">${mealListContainer.ingredient2}</li>
-                            <li class="ingredient">${mealListContainer.ingredient3}</li>
-                            <li class="ingredient">${mealListContainer.ingredient4}</li>
-                            <li class="ingredient">${mealListContainer.ingredient5}</li>
-                        </ul>
-                        <a href="${mealListContainer.Videolink}">
-                                <button>${mealListContainer.button}</button>
-                        </a>
-                    `
-                }) ;
-            }
-renderMealList(mealListContainer);
-            
-
 const mealListContainer = [
     {
         image:'https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg',
@@ -289,36 +266,85 @@ const mealListContainer = [
         image:'https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg',
         mealTitle:'Chicken Fajita Mac and Cheese',
         instruction:'Fry your onion, peppers and garlic in olive oil until nicely translucent. Make a well in your veg and add your chicken. Add your seasoning and salt. A...',
-        ingredient1:'',
-        ingredient2:'',
-        ingredient3:'',
-        ingredient4:'',
-        ingredient5: '',
-        Videolink:'',
+        ingredient1:'macaroni - 500g',
+        ingredient2:'chicken stock - 2 cups',
+        ingredient3:'heavy cream - 1/2 cup',
+        ingredient4:'fajita seasoning - 1 packet',
+        ingredient5: 'salt - 1 tsp',
+        Videolink:'https://www.youtube.com/watch?v=bwTSmLTZKNg',
         button:'Watch Video'
     },
     {
-        image:'',
-        mealTitle:'',
-        instruction:'',
-        ingredient1:'',
-        ingredient2:'',
-        ingredient3:'',
-        ingredient4:'',
-        ingredient5: '',
-        Videolink:''
+        image:'https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg',
+        mealTitle:'Crock Pot Chicken Baked Tacos',
+        instruction:'Put the uncooked chicken breasts in the crock pot. Pour the full bottle of salad dressing over the chicken. Sprinkle the rest of the ingredients over ...',
+        ingredient1:'Chicken Breasts - 4 - 6',
+        ingredient2:'Vinaigrette Dressing - 1 bottle',
+        ingredient3:'Cumin - 1½ tablespoon',
+        ingredient4:'Smoked Paprika - 1 tablespoon',
+        ingredient5: 'Garlic - 1 teaspoon',
+        Videolink:'https://www.youtube.com/watch?v=oqL0mLDBzS4',
         button:'Watch Video'
     },
     {
-        image:'',
-        mealTitle:'',
-        instruction:'',
-        ingredient1:'',
-        ingredient2:'',
-        ingredient3:'',
-        ingredient4:'',
-        ingredient5: '',
-        Videolink:''
+        image:'https://www.themealdb.com/images/media/meals/lx1kkj1593349302.jpg',
+        mealTitle:'Rosół (Polish Chicken Soup)',
+        instruction:'Add chicken to a large Dutch oven or stock pot Cover with water Bring to a boil and simmer for 2 to 2 1/2 hours, skimming any impurities off the to...',
+        ingredient1:'Chicken Legs - 4 Chopped',
+        ingredient2:'Onions - 2 large',
+        ingredient3:'Carrots - 5 chopped',
+        ingredient4:'Leek - 1 chopped',
+        ingredient5: 'Celery - 1 small',
+        Videolink:'https://www.youtube.com/watch?v=AU60fxyxXGw',
         button:'Watch Video'
     },
 ]
+
+const renderMealList = mealListContainer =>{
+    const Container = document.querySelector('.meal-list');
+        mealListContainer.forEach(mealListContainer => {
+            Container.innerHTML += `
+                        <img src="${mealListContainer.image}" alt="" class="meal-image">
+                        <h2 class="meal-title">${mealListContainer.mealTitle}</h2>
+                        <p class="instruction">${mealListContainer.instruction}</p>
+                        <ul class="ingredients">
+                            <li class="ingredient">${mealListContainer.ingredient1}</li>
+                            <li class="ingredient">${mealListContainer.ingredient2}</li>
+                            <li class="ingredient">${mealListContainer.ingredient3}</li>
+                            <li class="ingredient">${mealListContainer.ingredient4}</li>
+                            <li class="ingredient">${mealListContainer.ingredient5}</li>
+                        </ul>
+                        <a href="${mealListContainer.Videolink}">
+                                <button>${mealListContainer.button}</button>
+                        </a>
+                    `
+                }) ;
+            }
+renderMealList(mealListContainer);
+
+
+// const mealList = document.querySelector('.meal-list');
+
+// const renderMealList = ()=>{
+//     mealListContainer.map((mealListData)=>{
+//         const mealListElement = document.createElement('div');
+//         mealListElement.classList.add('meal');
+//         mealListElement.innerHTML += `
+//             <img src="${mealListContainer.image}" alt="" class="meal-image">
+//             <h2 class="meal-title">${mealListContainer.mealTitle}</h2>
+//             <p class="instruction">${mealListContainer.instruction}</p>
+//             <ul class="ingredients">
+//                 <li class="ingredient">${mealListContainer.ingredient1}</li>
+//                 <li class="ingredient">${mealListContainer.ingredient2}</li>
+//                 <li class="ingredient">${mealListContainer.ingredient3}</li>
+//                 <li class="ingredient">${mealListContainer.ingredient4}</li>
+//                 <li class="ingredient">${mealListContainer.ingredient5}</li>
+//             </ul>
+//             <a href="${mealListContainer.Videolink}">
+//                 <button>${mealListContainer.button}</button>
+//             </a>`
+
+//         mealList.appendChild(mealListElement)
+//     })
+// }
+// renderMealList();
