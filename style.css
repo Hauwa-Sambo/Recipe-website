@@ -19,12 +19,13 @@ li{
 }
 .meal-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* display: flex;
     flex-direction: column; */
     /* justify-content: center;
     align-items: center; */
     gap: 30px;
+    justify-content: center;
 }
 .meal{
     /* display: flex;
@@ -60,12 +61,12 @@ button{
     color: antiquewhite;
     font-weight: 500px;
 }
-@media screen and (min-width: 1020px) {
+/* @media screen and (min-width: 1020px) {
     .meal-list{
         /* flex-direction: row;
         flex-wrap: wrap; */
         /* display: grid;
         grid-template-columns: 1fr 12;
-        grid-column: 1/6; */
+        grid-column: 1/6; *
     }
-}
+} */
