@@ -304,6 +304,7 @@ const renderMealList = mealListContainer =>{
     const Container = document.querySelector('.meal-list');
         mealListContainer.forEach(mealListContainer => {
             Container.innerHTML += `
+                    <div class='meal'>
                         <img src="${mealListContainer.image}" alt="" class="meal-image">
                         <h2 class="meal-title">${mealListContainer.mealTitle}</h2>
                         <p class="instruction">${mealListContainer.instruction}</p>
@@ -317,34 +318,8 @@ const renderMealList = mealListContainer =>{
                         <a href="${mealListContainer.Videolink}">
                                 <button>${mealListContainer.button}</button>
                         </a>
-                    `
+                    </div>
+                    `;
                 }) ;
             }
 renderMealList(mealListContainer);
-
-
-// const mealList = document.querySelector('.meal-list');
-
-// const renderMealList = ()=>{
-//     mealListContainer.map((mealListData)=>{
-//         const mealListElement = document.createElement('div');
-//         mealListElement.classList.add('meal');
-//         mealListElement.innerHTML += `
-//             <img src="${mealListContainer.image}" alt="" class="meal-image">
-//             <h2 class="meal-title">${mealListContainer.mealTitle}</h2>
-//             <p class="instruction">${mealListContainer.instruction}</p>
-//             <ul class="ingredients">
-//                 <li class="ingredient">${mealListContainer.ingredient1}</li>
-//                 <li class="ingredient">${mealListContainer.ingredient2}</li>
-//                 <li class="ingredient">${mealListContainer.ingredient3}</li>
-//                 <li class="ingredient">${mealListContainer.ingredient4}</li>
-//                 <li class="ingredient">${mealListContainer.ingredient5}</li>
-//             </ul>
-//             <a href="${mealListContainer.Videolink}">
-//                 <button>${mealListContainer.button}</button>
-//             </a>`
-
-//         mealList.appendChild(mealListElement)
-//     })
-// }
-// renderMealList();
