@@ -24,7 +24,7 @@ This project is built using HTML, CSS and JavaScript, and provides a visually ap
 
 ## Live-demo
 
-- Check out the Live Demo of the Project: [Live Demo]( https://travel-website-a3fo.onrender.com)
+- Check out the Live Demo of the Project: [Live Demo]( https://recipe-website-rcbz.onrender.com)
 
 ## Loom-video
 
