@@ -26,6 +26,11 @@ This project is built using HTML, CSS and JavaScript, and provides a visually ap
 
 - Check out the Live Demo of the Project: [Live Demo]( https://travel-website-a3fo.onrender.com)
 
+## Loom-video
+
+- This is the link to the loom video on the project: [Loom Video] (https://www.loom.com/share/bf8d9ea25e614a8aa130d35193a0e015?sid=e6f06bb8-5398-4fda-9c83-64182f9a313c)
+
+
 ## Technologies Used
 
 - HTML5
